@@ -1,0 +1,134 @@
+/* soft reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/Fundo-Site.jpg');
+    font-family: 'Lalezar', cursive;
+    height: 100vh;
+    background-size: auto 100vh;
+    font-size: 10px;
+  }
+
+  /* se a tela tiver pelo menos 400px vai carregar esse estilo*/
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+
+    /*breackpoint*/
+  }@media (min-width: 1200px) {
+    body {
+      font-size: 20px;
+    }
+  }
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu {
+    background-color: #F5F5F5;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  a {
+    color: #4F4F4F;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-title {
+    text-align: center;
+    color: 	#ffffff;
+    font-size: 3em;
+    font-family: 'Fugaz One', cursive;
+  }
+
+  .site-subtitle{
+    text-align: center;
+    color: 	#ffffff;
+    line-height: 1.8em;
+    font-family: 'Damion', cursive;
+    font-size: 2em;
+    }
+  .portfolio {
+    padding: 2em;
+    height: 100ph;
+    
+  }
+
+  .portfolio h2 {
+    color: #ffffff; 
+    margin: 1em;
+    font-size: 3em;
+    text-align: center;
+   }
+
+  .portfolio .grid {
+    display: grid;
+    gap: 2em;
+  }
+
+  @media (min-width: 570px) {
+    .portfolio .grid {
+      grid-template-columns: 240px 240px;
+    }
+  }
+
+@media (min-width: 860px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px 240px;
+    justify-content: center;
+    align-content: center; 
+    height: calc (100vh - 8em - 48px)
+  }
+}
+
+  .portfolio figure {
+    text-align: center;
+  }
+   
+  .img-portfolio{
+    height: 250px;
+    width: 250px;
+    object-fit: left bottom;
+    border-radius: 10px;
+  }
+
+  @media (min-width: 1200px) {
+    .img-portfolio{
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  figcaption {
+    color: #ffffff;
+    font-size: 1.5em;
+  }
